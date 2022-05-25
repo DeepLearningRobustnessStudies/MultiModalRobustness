@@ -1,1 +1,145 @@
-<h1>Hello World</h1>
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>[Paper ID: 4704]</title>
+
+  <link rel="stylesheet" href="template.css">
+</head>
+
+<body>
+  <br>
+
+  <center><span style="font-size: 44px; font-weight: bold;">A large-scale analysis on robustness in action recognition</span></center><br/>
+
+  <table align=center width=600px style="padding-top: 0px; padding-bottom: 20px;">
+    <tr>
+      <td align=center width=600px>
+        <center>
+          <span style="font-size: 22px">Anonymous ECCV Submission</span>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <table align=center width=600px>
+    <tr>
+      <td align=center width=150px>
+        <center>
+          <span style="font-size: 22px">
+            <a href="." target="_top">[Home]</a>
+          </span>
+        </center>
+      </td>
+      
+      <td align=center width=150px>
+        <center>
+          <span style="font-size: 22px">
+            <a href="." target="_top">[Paper]</a>
+          </span>
+        </center>
+      </td>
+
+      <td align=center width=150px>
+        <center>
+          <span style="font-size: 22px">
+            <a href="./dataset.html" target="_top">[Dataset]</a>
+          </span>
+        </center>
+      </td>
+      
+      <td align=center width=150px>
+        <center>
+          <span style="font-size: 22px">
+            <a href="./code/code.zip" target="_top">[Code]</a>
+          </span>
+        </center>
+      </td>
+
+      <td align=center width=150px>
+        <center>
+          <span style="font-size: 22px">
+            <a href="./examples.html" target="_top">[Examples]</a>
+          </span>
+        </center>
+      </td>
+      
+    </tr>
+  </table>
+
+  <br>
+  <br>
+
+
+  <table align=center width=800px>
+    <center><img src="./images/pie.png" width=600px /></center> <br>
+    <center>Different real-world perturbations used in this study. </center>
+  </table>
+
+  <br>
+
+  <br>
+
+  <center>
+    <h2>Abstract</h2>
+  </center>
+  <div style="width: 750px; margin: 0 auto; text-align=center; text-align: justify; text-justify: inter-ideograph;">
+ Joint visual and language modeling on large-scale datasets has recently shown a good progress in multi-modal tasks when compared to single modal learning. % modeling with one modality.
+ However, robustness of these approaches against real-world perturbations has not been studied. In this work, we perform the first extensive robustness study of such models against various real-world perturbations focusing on video and language. 
+ We focus on text-to-video retrieval and propose two large-scale benchmark datasets, <i>MSRVTT-P<\i> and <i>YouCook2-P</i>, which utilize 90 different visual and 35 different textual perturbations. The study reveals some interesting findings: 
+    1) The studied models are more robust when text is perturbed versus when video is perturbed 
+ 2) The transformer text encoder is more robust on non-semantic changing text perturbations and visual perturbations compared to word embedding approaches.
+ 3) Using two-branch encoders in isolation is typically more robust than when architectures use cross-attention.
+ We hope this study will serve as a benchmark and guide future research in robust multimodal learning.
+  </div>
+   <br>
+  <br>
+<hr> <br>
+  <center>
+    <h2>Sample perturbations</h2>
+    <center>Severity increasing from left to right.</center>
+  </center><br>
+  <table align=center width=800px>
+    <center>
+      <img src="./images/hmdb-51p/Bill_Clinton_Statue_Unveiled_In_Kosovo_shake_hands_f_cm_np2_le_bad_0_box_jumbling_5.gif" width=150px />
+      <img src="./images/hmdb-51p/Bill_Clinton_Statue_Unveiled_In_Kosovo_shake_hands_f_cm_np2_le_bad_0_box_jumbling_4.gif" width=150px />
+      <img src="./images/hmdb-51p/Bill_Clinton_Statue_Unveiled_In_Kosovo_shake_hands_f_cm_np2_le_bad_0_box_jumbling_3.gif" width=150px />
+      <img src="./images/hmdb-51p/Bill_Clinton_Statue_Unveiled_In_Kosovo_shake_hands_f_cm_np2_le_bad_0_box_jumbling_2.gif" width=150px />
+      <img src="./images/hmdb-51p/Bill_Clinton_Statue_Unveiled_In_Kosovo_shake_hands_f_cm_np2_le_bad_0_box_jumbling_1.gif" width=150px />
+    </center>
+    <center>Box jumbling </center><br>
+    <center>
+      <img src="./images/kinetics-400p/--yCUKj4Oq4_000018_000028_random_rotate_1.gif" width=150px />
+      <img src="./images/kinetics-400p/--yCUKj4Oq4_000018_000028_random_rotate_2.gif" width=150px />
+      <img src="./images/kinetics-400p/--yCUKj4Oq4_000018_000028_random_rotate_3.gif" width=150px />
+      <img src="./images/kinetics-400p/--yCUKj4Oq4_000018_000028_random_rotate_4.gif" width=150px />
+      <img src="./images/kinetics-400p/--yCUKj4Oq4_000018_000028_random_rotate_5.gif" width=150px />      
+    </center>
+    <center>Random rotation</center><br>
+    <center>
+      <img src="./images/ucf-101p/v_ApplyEyeMakeup_g04_c03_motion_1.gif" width=150px />
+      <img src="./images/ucf-101p/v_ApplyEyeMakeup_g04_c03_motion_2.gif" width=150px />
+      <img src="./images/ucf-101p/v_ApplyEyeMakeup_g04_c03_motion_3.gif" width=150px />
+      <img src="./images/ucf-101p/v_ApplyEyeMakeup_g04_c03_motion_4.gif" width=150px />
+      <img src="./images/ucf-101p/v_ApplyEyeMakeup_g04_c03_motion_5.gif" width=150px />        
+    </center>
+    <center>Motion blur</center><br>
+    
+  </table>
+  <br><br> <hr><br>
+  <center>
+    <h2>Robustness analysis</h2>
+  </center>
+  <table align=center width=800px>
+    <center><img src="./images/teaser.png" width=600px /></center><br>
+    <center>A performance and robustness visualization of action recognition models on UCF-101P. y-axis: relative robustness (lower is better), x-axis: accuracy on clean videos,  P indicates pre-training, and the size of circle indicates FLOPs. Transformer based models, such as MViT, not only performs better than CNN counterparts but are more robust against distribution shifts. However, without pre-training its robustness drops significantly.</center>
+  </table>
+
+ 
+
+  <br>
+
+</body>
+
+</html>
