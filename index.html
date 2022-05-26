@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>[Paper ID: 4704]</title>
+  <title>[Paper ID: 4460]</title>
 
   <link rel="stylesheet" href="template.css">
 </head>
@@ -17,7 +17,7 @@
     <tr>
       <td align=center width=600px>
         <center>
-          <span style="font-size: 22px">Anonymous ECCV Submission</span>
+          <span style="font-size: 22px">Anonymous NIPs Submission</span>
         </center>
       </td>
     </tr>
@@ -102,27 +102,27 @@
   </center><br>
   <table align=center width=800px>
     <center>
-      <img src="./images/hmdb-51p/Bill_Clinton_Statue_Unveiled_In_Kosovo_shake_hands_f_cm_np2_le_bad_0_box_jumbling_5.gif" width=150px />
-      <img src="./images/hmdb-51p/Bill_Clinton_Statue_Unveiled_In_Kosovo_shake_hands_f_cm_np2_le_bad_0_box_jumbling_4.gif" width=150px />
-      <img src="./images/hmdb-51p/Bill_Clinton_Statue_Unveiled_In_Kosovo_shake_hands_f_cm_np2_le_bad_0_box_jumbling_3.gif" width=150px />
-      <img src="./images/hmdb-51p/Bill_Clinton_Statue_Unveiled_In_Kosovo_shake_hands_f_cm_np2_le_bad_0_box_jumbling_2.gif" width=150px />
-      <img src="./images/hmdb-51p/Bill_Clinton_Statue_Unveiled_In_Kosovo_shake_hands_f_cm_np2_le_bad_0_box_jumbling_1.gif" width=150px />
+      <img src="./images/boxjumble_vido1_sev1" width=150px />
+      <img src="./images/boxjumble_vido1_sev2.gif" width=150px />
+      <img src="./images/boxjumble_vido1_sev3.gif" width=150px />
+      <img src="./images/boxjumble_vido1_sev4.gif" width=150px />
+      <img src="./images/boxjumble_vido1_sev5.gif" width=150px />
     </center>
     <center>Box jumbling </center><br>
     <center>
-      <img src="./images/kinetics-400p/--yCUKj4Oq4_000018_000028_random_rotate_1.gif" width=150px />
-      <img src="./images/kinetics-400p/--yCUKj4Oq4_000018_000028_random_rotate_2.gif" width=150px />
-      <img src="./images/kinetics-400p/--yCUKj4Oq4_000018_000028_random_rotate_3.gif" width=150px />
-      <img src="./images/kinetics-400p/--yCUKj4Oq4_000018_000028_random_rotate_4.gif" width=150px />
-      <img src="./images/kinetics-400p/--yCUKj4Oq4_000018_000028_random_rotate_5.gif" width=150px />      
+      <img src="./images/rotate_vido3_sev1.gif" width=150px />
+      <img src="./images/rotate_vido3_sev2.gif" width=150px />
+      <img src="./images/rotate_vido3_sev3.gif" width=150px />
+      <img src="./images/rotate_vido3_sev4.gif" width=150px />
+      <img src="./images/rotate_vido3_sev5.gif" width=150px />      
     </center>
     <center>Random rotation</center><br>
     <center>
-      <img src="./images/ucf-101p/v_ApplyEyeMakeup_g04_c03_motion_1.gif" width=150px />
-      <img src="./images/ucf-101p/v_ApplyEyeMakeup_g04_c03_motion_2.gif" width=150px />
-      <img src="./images/ucf-101p/v_ApplyEyeMakeup_g04_c03_motion_3.gif" width=150px />
-      <img src="./images/ucf-101p/v_ApplyEyeMakeup_g04_c03_motion_4.gif" width=150px />
-      <img src="./images/ucf-101p/v_ApplyEyeMakeup_g04_c03_motion_5.gif" width=150px />        
+      <img src="./images/motionblur_vido2_sev1.gif" width=150px />
+      <img src="./images/motionblur_vido2_sev2.gif" width=150px />
+      <img src="./images/motionblur_vido2_sev3.gif" width=150px />
+      <img src="./images/motionblur_vido2_sev4.gif" width=150px />
+      <img src="./images/motionblur_vido2_sev5.gif" width=150px />        
     </center>
     <center>Motion blur</center><br>
     
@@ -132,8 +132,23 @@
     <h2>Robustness analysis</h2>
   </center>
   <table align=center width=800px>
-    <center><img src="./images/teaser.png" width=600px /></center><br>
-    <center>A performance and robustness visualization of action recognition models on UCF-101P. y-axis: relative robustness (lower is better), x-axis: accuracy on clean videos,  P indicates pre-training, and the size of circle indicates FLOPs. Transformer based models, such as MViT, not only performs better than CNN counterparts but are more robust against distribution shifts. However, without pre-training its robustness drops significantly.</center>
+    <center><img src="./images/TeaserAll.png" width=600px /></center><br>
+    <center>A performance and robustness visualization of multimodal models on YouCook2-P and MSRVTT-P. 
+      y-axis: relative robustness (lower is better), x-axis: R@5 on text-to-video retrieval,  
+      , and the size of circle indicates FLOPs. The models used are 
+      <a href="https://github.com/facebookresearch/fairseq/tree/main/examples/MMPT">Videoclip</a>,
+      <a href="https://github.com/microsoft/UniVL">Univl</a>,
+      <a href="https://github.com/gingsi/coot-videotext">COOT</a>, and
+      <a href="https://github.com/antoine77340/MIL-NCE_HowTo100M">HowTo100M MIL</a>.
+      The results vary based on the dataset, 
+      for example, 
+<a href="https://github.com/facebookresearch/fairseq/tree/main/examples/MMPT">Videoclip</a> from scratch is both more robust and a better performer on 
+      the MSRVTT dataset than on YouCook2. This relationship <i>indicatea a difference on 
+      how models <b>handle clips from long, complex activities</b> compared to videos that 
+      are short and of a simple activity</i>. 
+      The top performers are consistently <a href="https://github.com/facebookresearch/fairseq/tree/main/examples/MMPT">Videoclip</a>
+      and <a href="https://github.com/microsoft/UniVL">Univl</a>, which are also the larger 
+      models. </center>
   </table>
 
  
