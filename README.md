@@ -55,9 +55,14 @@ and [VideoFeatureExtractor](https://github.com/ArrowLuo/VideoFeatureExtractor/).
 
 
 ## Examples
+<p float="left">
+    <img src="./images/freeze_vido1_sev1.gif" width=150px />
+      <img src="./images/freeze_vido1_sev2.gif" width=150px />
+      <img src="./images/freeze_vido1_sev3.gif" width=150px />
+      <img src="./images/freeze_vido1_sev4.gif" width=150px />
+      <img src="./images/freeze_vido1_sev5.gif" width=150px />
+</p>
 
-
-![alt-text-1](./images/freeze_vido1_sev1.gif "title-1") ![alt-text-2](./images/freeze_vido1_sev2.gif "title-2")![alt-text-1](./images/freeze_vido1_sev3.gif "title-1")![alt-text-1](./images/freeze_vido1_sev4.gif "title-1")![alt-text-1](./images/freeze_vido1_sev5.gif "title-1")
 <table align=center width=800px>
     <center>
       <img src="./images/freeze_vido1_sev1.gif" width=150px />
