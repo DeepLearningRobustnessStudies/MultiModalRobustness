@@ -55,6 +55,12 @@ and [VideoFeatureExtractor](https://github.com/ArrowLuo/VideoFeatureExtractor/).
 
 
 ## Examples
+<center><h3>Original</h3></center><br>
+<p float="center">
+    <img src="./images/noperturb_video1.gif" width=150px />
+      <img src="./images/noperturb_video3.gif" width=150px />
+</p>
+<center><h3>Freeze</h3></center><br>
 <p float="left">
     <img src="./images/freeze_vido1_sev1.gif" width=150px />
       <img src="./images/freeze_vido1_sev2.gif" width=150px />
@@ -62,30 +68,41 @@ and [VideoFeatureExtractor](https://github.com/ArrowLuo/VideoFeatureExtractor/).
       <img src="./images/freeze_vido1_sev4.gif" width=150px />
       <img src="./images/freeze_vido1_sev5.gif" width=150px />
 </p>
-
-<table align=center width=800px>
-    <center>
-      <img src="./images/freeze_vido1_sev1.gif" width=150px />
-      <img src="./images/freeze_vido1_sev2.gif" width=150px />
-      <img src="./images/freeze_vido1_sev3.gif" width=150px />
-      <img src="./images/freeze_vido1_sev4.gif" width=150px />
-      <img src="./images/freeze_vido1_sev5.gif" width=150px />
-    </center>
-    <center>Freeze </center><br>
-    <center>
-      <img src="./images/impulse_vido3_sev1.gif" width=150px />
+<p float="left">
+    <img src="./images/freeze_vido3_sev1.gif" width=150px />
+      <img src="./images/freeze_vido3_sev2.gif" width=150px />
+      <img src="./images/freeze_vido3_sev3.gif" width=150px />
+      <img src="./images/freeze_vido3_sev4.gif" width=150px />
+      <img src="./images/freeze_vido3_sev5.gif" width=150px />
+</p>
+<center><h3>Impulse</h3></center><br>
+<p>
+    <img src="./images/impulse_vido1_sev1.gif" width=150px />
+      <img src="./images/impulse_vido1_sev2.gif" width=150px />
+      <img src="./images/impulse_vido1_sev3.gif" width=150px />
+      <img src="./images/impulse_vido1_sev4.gif" width=150px />
+      <img src="./images/impulse_vido1_sev5.gif" width=150px />
+</p>
+<p>
+    <img src="./images/impulse_vido3_sev1.gif" width=150px />
       <img src="./images/impulse_vido3_sev2.gif" width=150px />
       <img src="./images/impulse_vido3_sev3.gif" width=150px />
       <img src="./images/impulse_vido3_sev4.gif" width=150px />
       <img src="./images/impulse_vido3_sev5.gif" width=150px />
-    </center>
-    <center>Impulse</center><br>
-    <center>
-      <img src="./images/reverse_vido2_sev1.gif" width=150px />
-      <img src="./images/reverse_vido2_sev2.gif" width=150px />
-      <img src="./images/reverse_vido2_sev3.gif" width=150px />
-      <img src="./images/reverse_vido2_sev4.gif" width=150px />
-      <img src="./images/reverse_vido2_sev5.gif" width=150px />
-<center>Reverse</center><br>
-    </center>
-</table>
+</p>
+
+<center><h3>Reverse</h3></center><br>
+<p>
+<img src="./images/reverse_vido1_sev1.gif" width=150px />
+      <img src="./images/reverse_vido1_sev2.gif" width=150px />
+      <img src="./images/reverse_vido1_sev3.gif" width=150px />
+      <img src="./images/reverse_vido1_sev4.gif" width=150px />
+      <img src="./images/reverse_vido1_sev5.gif" width=150px />
+</p>
+<p>
+<img src="./images/reverse_vido3_sev1.gif" width=150px />
+      <img src="./images/reverse_vido3_sev2.gif" width=150px />
+      <img src="./images/reverse_vido3_sev3.gif" width=150px />
+      <img src="./images/reverse_vido3_sev4.gif" width=150px />
+      <img src="./images/reverse_vido3_sev5.gif" width=150px />
+</p>
