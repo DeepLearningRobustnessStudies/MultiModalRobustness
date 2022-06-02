@@ -1028,10 +1028,10 @@ if __name__ == '__main__':
             df = pd.read_csv(meta_pth)
     else:
         if args.dataset == 'msrvtt':
-            df = pd.read_csv('datasets/msvrtt_eval.csv')
+            df = pd.read_csv('datasets/MSRVTT/msvrtt_eval.csv')
             df['original_text'] = df['text'].values
         elif args.dataset == 'youcook2' and not args.pickle:
-            df = pd.read_csv('datasets/youcook2_eval.csv')
+            df = pd.read_csv('datasets/youcook2/youcook2_eval.csv')
             df['original_text'] = df['text'].values
         elif args.dataset == 'youcook2' and args.pickle:
             df = pickle.load(open('data/youcook2/youcookii/youcookii_data.no_transcript.pickle', 'rb'))

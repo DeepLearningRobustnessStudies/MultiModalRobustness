@@ -14,11 +14,23 @@ This is the same procedure for the MC VideoQA on MSRVTT in `generate_noisy_mc_vi
 We provide both the on-the-fly generation of perturbations in `video_perturbations.py` which is useful for processing 
 pre-extracted features and generating noisy video copies in `generate_noisy_videos.py`.
 
+
 To run `generate_noisy_videos.py`, an example is:
 
 ```bash
 python generate_noisy_videos.py msrvtt data/msrvtt/videos data/msrvtt/noisy_videos blur
 ```
+Before running this command, you need to generate a file for the MSRVTT and YouCook2 dataset with a mapping of
+the original video for one column and the target file for the second. This should be stored
+as `datasets/{youcook2, msrvtt}_videolist.csv`. Example:
+
+```text
+/home/c3-0/datasets/YouCook2/validation/226/videos/xHr8X2Wpmno.mkv,/home/c3-0/datasets/robustness/youcook2/xHr8X2Wpmno.mkv
+/home/c3-0/datasets/YouCook2/validation/105/videos/V53XmPeyjIU.mkv,/home/c3-0/datasets/robustness/youcook2/V53XmPeyjIU.mkv
+/home/c3-0/datasets/YouCook2/validation/201/videos/mZwK0TBI1iY.mkv,/home/c3-0/datasets/robustness/youcook2/mZwK0TBI1iY.mkv
+/home/c3-0/datasets/YouCook2/validation/310/videos/gEYyWqs1oL0.mp4,/home/c3-0/datasets/robustness/youcook2/gEYyWqs1oL0.mp4
+```
+
 This will run generating videos for MSRVTT where the original videos are stored in `data/msrvtt/videos`, perturbing with
 blur and saving the copies in `data/msrvtt/noisy_videos`.
 
@@ -26,3 +38,5 @@ Use `video_perturbations.py` by creating a `VideoPerturbation` object by initial
 This is useful when modifying video feature extractor code from 
 [fairseq](https://github.com/facebookresearch/fairseq/tree/main/examples/MMPT/scripts/video_feature_extractor)
 and [VideoFeatureExtractor](https://github.com/ArrowLuo/VideoFeatureExtractor/).
+
+

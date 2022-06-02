@@ -248,7 +248,7 @@ if __name__ == '__main__':
                 if not os.path.exists(newroot):
                     Path(newroot).mkdir(parents=True)
 
-                pbar2.set_postfix({'method': method, 'severity': sev, 'video': row[0].replace('/home/c3-0/datasets/YouCook2/validation/', ''), 'new_video': newpath})
+                pbar2.set_postfix({'method': method, 'severity': sev, 'video': row[0].replace(args.data_root, ''), 'new_video': newpath})
 
                 if sys.getsizeof(oldpath) > 5e+10:
                     print(f"{oldpath} failed due to memory size greater than 50GB. Skipping...")
@@ -391,5 +391,5 @@ if __name__ == '__main__':
                 vidcap.release()
                 out.release()
                 pbar2.set_postfix({'method': method, 'severity': sev,
-                                   'video': row[0].replace('/home/c3-0/datasets/YouCook2/validation/', ''),
+                                   'video': row[0].replace(args.data_root, ''),
                                    'new_video': newpath, 'status': "complete"})
