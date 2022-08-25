@@ -42,4 +42,3 @@ def get_robustness_scores(df):
         df[f'{ret}$\gamma^r$'] = 1 - (df[f'{ret}_GT'] - df[ret]) / df[f'{ret}_GT']
 
     return df
-    return df
